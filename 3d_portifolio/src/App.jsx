@@ -9,18 +9,21 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <main className='bg-blue-100 min-h-screen'>
+    <main className="min-h-screen bg-gray-100">
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        {/* padding top suficiente para navbar fixa */}
+        <div className="pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </Router>
     </main>
-  )
+  );
 }
 
 export default App;

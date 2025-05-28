@@ -1,46 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212; /* fundo escuro */
+  color: #E5E7EB; /* texto claro */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a {
+  color: #F97316; /* laranja vibrante */
+  transition: color 0.3s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: #FDBA74; /* laranja claro ao hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button, .btn-primary {
+  background-color: #F97316; /* laranja vibrante */
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.card {
-  padding: 2em;
+button:hover, .btn-primary:hover {
+  background-color: #EA580C; /* laranja mais escuro */
 }
 
-.read-the-docs {
-  color: #888;
+.navbar {
+  background-color: #1F1F1F; /* navbar escura */
+  color: #FFFFFF;
+}
+
+.section-dark {
+  background: linear-gradient(to bottom right, #1F1F1F, #2C2C2C);
+}
+
+.skill-badge {
+  background: linear-gradient(to top right, #F97316, #F87171);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
 }
