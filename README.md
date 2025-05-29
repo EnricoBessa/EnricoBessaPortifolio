@@ -6,5 +6,6 @@ Estou fazendo o meu portifólio, a principio irei colocar coisas que ainda falta
 - fazer o contact
 - poder escolher entre portugues e ingles
 - mudar logo
+- testar envio de email
 
 eu estou pensando também em fazer alguns cursos gratis para adicionar no site, alguns 
