@@ -45,41 +45,54 @@ export const skills = [
 ];
 
 export const experience = [
-  {
-    title: 'Backend Developer',
-    company_name: 'TechWave Solutions',
-    icon: '/images/company1.svg',
-    iconBg: '#F97316', // laranja
-    date: 'Jan 2023 - Dec 2023',
+    {
+    title: "Support and Data Analysis Intern",
+    company_name: "EMATER-MG",
+    icon: "/images/emater.png", // Coloque o ícone da empresa aqui
+    iconBg: "#E6DEDD",
+    date: "April 2023 - March 2024",
     points: [
-      'Desenvolvimento de APIs REST usando C# e ASP.NET Core.',
-      'Integração com bancos de dados SQL Server e MongoDB.',
-      'Implementação de autenticação JWT e autorização baseada em roles.',
+      "Provided support in IT and data analysis operations.",
+      "Assisted in data management and internal system maintenance.",
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'CodeCraft Inc.',
-    icon: '/images/company2.svg',
-    iconBg: '#2DD4BF', // verde água
-    date: 'Mar 2022 - Dec 2022',
+    title: "Software Engineer Intern",
+    company_name: "DTG Consultoria e Projetos",
+    icon: "/images/dtg.png", // Coloque o ícone da empresa aqui
+    iconBg: "#E6DEDD",
+    date: "April 2024 - Present",
     points: [
-      'Criação de dashboards interativos com React e Tailwind CSS.',
-      'Desenvolvimento de microsserviços escaláveis com Node.js.',
-      'Automatização de processos CI/CD usando GitHub Actions.',
-    ],
-  },
-  {
-    title: 'Intern Developer',
-    company_name: 'EduTech Labs',
-    icon: '/images/company3.svg',
-    iconBg: '#60A5FA', // azul
-    date: 'Jul 2021 - Feb 2022',
-    points: [
-      'Colaboração em projetos educacionais focados em ensino técnico.',
-      'Desenvolvimento de scripts em Python para automação de tarefas.',
-      'Suporte técnico e documentação de sistemas legados.',
+      "Working on software engineering projects in a hybrid environment.",
+      "Collaborating with multidisciplinary teams to deliver robust technical solutions.",
     ],
   },
 ];
+
+export const education = [
+  {
+    title: "Technical Degree in IT",
+    institution_name: "COTEMIG - College and High School",
+    icon: "/images/cotemig.png", // Substitua pelo ícone correto se houver
+    iconBg: "#E6DEDD",
+    date: "2020 - 2022",
+    points: [
+      "Hands-on experience with HTML5, MySQL, PHP, and other technologies.",
+      "Built foundational knowledge in networks, programming, and databases.",
+    ],
+  },
+  {
+    title: "Bachelor's in Software Engineering",
+    institution_name: "PUC Minas",
+    icon: "/images/puc.png", // Substitua pelo ícone correto se houver
+    iconBg: "#E6DEDD",
+    date: "January 2023 - January 2027",
+    points: [
+      ".NET Framework development and core software engineering subjects.",
+      "Focus on backend development, databases, and software architecture.",
+    ],
+  },
+];
+
+
 

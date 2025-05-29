@@ -1,4 +1,4 @@
-import { skills, experience } from '../constants';
+import { skills, experience, education } from '../constants';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -28,6 +28,48 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="py-16">
+        <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2 text-center">Education</h3>
+        <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed text-center">
+          <p>
+            I've stduied ......................................................  :
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <VerticalTimeline>
+            {education.map((edu, index) => (
+              <VerticalTimelineElement
+                key={index}
+                date={edu.date}
+                icon={
+                  <div className="flex justify-center items-center w-full h-full">
+                    <img src={edu.icon} alt={edu.institution_name} className="w-[60%] h-[60%] object-contain" />
+                  </div>
+                }
+                iconStyle={{ background: edu.iconBg }}
+                contentStyle={{
+                  borderBottom: '8px solid ' + edu.iconBg,
+                  boxShadow: 'none',
+                }}
+              >
+                <div className="text-black text-xl font-semibold">
+                  <h3>{edu.title}</h3>
+                  <p className="text-gray-700 font-medium m-0">{edu.institution_name}</p>
+                </div>
+                <ul className="my-5 list-disc ml-5 space-y-2">
+                  {edu.points.map((point, i) => (
+                    <li key={`education-point-${i}`} className="text-gray-600 text-sm pl-1">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
         </div>
       </div>
 
