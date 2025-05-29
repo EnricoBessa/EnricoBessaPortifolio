@@ -1,13 +1,14 @@
 import { skills, experience, education } from '../constants';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import CTA from '../components/CTA';
 
 const About = () => {
   return (
-    <section className="w-full px-6 py-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
+    <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
-          Hello, I'm <span className="text-orange-400">Enrico</span>
+          Hello, I'm <span className="orange-gradient_text font-semibold drop-shadow">Enrico</span>
         </h1>
 
         <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed">
@@ -44,10 +45,10 @@ const About = () => {
             {education.map((edu, index) => (
               <VerticalTimelineElement
                 key={index}
-                date={edu.date}
+                date={<div className="flex justify-center"> {edu.date} </div>}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
-                    <img src={edu.icon} alt={edu.institution_name} className="w-[60%] h-[60%] object-contain" />
+                    <img src={edu.icon} alt={edu.institution_name} className="w-[70%] h-[70%] object-contain" />
                   </div>
                 }
                 iconStyle={{ background: edu.iconBg }}
@@ -86,10 +87,10 @@ const About = () => {
             {experience.map((exp, index) => (
               <VerticalTimelineElement
                 key={index}
-                date={exp.date}
+                date={<div className="flex justify-center"> {exp.date} </div>}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
-                    <img src={exp.icon} alt={exp.company_name} className="w-[60%] h-[60%] object-contain" />
+                    <img src={exp.icon} alt={exp.company_name} className="w-[65%] h-[65%] object-contain" />
                   </div>
                 }
                 iconStyle={{ background: exp.iconBg }}
@@ -114,6 +115,9 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className="border-slate-50-200 "/>
+      <CTA/>
     </section>
   );
 };

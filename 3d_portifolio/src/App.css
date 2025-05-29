@@ -1,21 +1,20 @@
-
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #121212; /* fundo escuro */
-  color: #E5E7EB; /* texto claro */
+  background-color: #121212; 
+  color: #E5E7EB; 
 }
 
 a {
-  color: #F97316; /* laranja vibrante */
+  color: #F97316; 
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #FDBA74; /* laranja claro ao hover */
+  color: #FDBA74; 
 }
 
 button, .btn-primary {
-  background-color: #F97316; /* laranja vibrante */
+  background-color: #F97316; 
   color: #FFFFFF;
   border: none;
   padding: 0.5rem 1rem;
@@ -26,12 +25,19 @@ button, .btn-primary {
 }
 
 button:hover, .btn-primary:hover {
-  background-color: #EA580C; /* laranja mais escuro */
+  background-color: #EA580C; 
 }
 
 .navbar {
-  background-color: #1F1F1F; /* navbar escura */
+  background-color: #1F1F1F; 
   color: #FFFFFF;
+}
+
+.orange-gradient_text {
+  background: linear-gradient(to right, #f97316, #facc15); /* laranja para amarelo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .section-dark {
@@ -71,3 +77,31 @@ button:hover, .btn-primary:hover {
   align-items: center;
 }
 
+.cta-text {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+a.btn-cta {
+  color: white;
+}
+
+a.btn-cta:hover {
+  color: white; 
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f97316;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  backface-visibility: hidden;
+}
+
+.btn-cta:hover {
+  background-color: #ea580c; 
+}

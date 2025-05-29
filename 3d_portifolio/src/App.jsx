@@ -9,11 +9,11 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <main className="min-h-screen m-0 p-0 bg-gray-100">
+    <main>
       <Router>
         <Navbar />
         {/* padding top suficiente para navbar fixa */}
-        <div className="pt-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="m-4 h-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
