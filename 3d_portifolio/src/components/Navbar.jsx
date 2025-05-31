@@ -1,15 +1,21 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation(); // ✅ correto
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState('PT'); // Começa com PT
+  const currentLang = i18n.language.toUpperCase();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const links = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/projects', label: 'Projects' },
-    { to: '/contact', label: 'Contact' }
+    { to: '/', label: t('home') },
+    { to: '/about', label: t('about') },
+    { to: '/projects', label: t('projects') },
+    { to: '/contact', label: t('contact') }
   ];
 
   return (
@@ -39,14 +45,14 @@ const Navbar = () => {
         {/* Botões de idioma */}
         <div className="absolute right-6 top-1/2 -translate-y-1/2 flex gap-2">
           <button
-            className={`btnlenguage-nav ${selectedLang === 'PT' ? 'selected' : ''}`}
-            onClick={() => setSelectedLang('PT')}
+            className={`btnlenguage-nav ${currentLang === 'PT' ? 'selected' : ''}`}
+            onClick={() => changeLanguage('pt')}
           >
             PT
           </button>
           <button
-            className={`btnlenguage-nav ${selectedLang === 'EN' ? 'selected' : ''}`}
-            onClick={() => setSelectedLang('EN')}
+            className={`btnlenguage-nav ${currentLang === 'EN' ? 'selected' : ''}`}
+            onClick={() => changeLanguage('en')}
           >
             EN
           </button>
