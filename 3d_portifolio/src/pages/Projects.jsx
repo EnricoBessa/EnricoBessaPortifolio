@@ -27,17 +27,25 @@ const Projects = () => {
                 <img src={project.IconUrl} alt="project icon" className="w-1/2 h-1/2 object-contain" />
               </div>
             </div>
-            <div className=" mt-5 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">{project.name}</h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
+            <div className="mt-5 flex flex-col bg-black/10 p-5 rounded-2xl shadow-lg backdrop-blur-sm">
+              <h4 className="text-3xl font-bold text-white mb-1">{project.name}</h4>
+              <p className="text-gray-300 text-base mb-3">{project.initialDescription}</p>
+              <h5 className="text-orange-300 text-sm uppercase font-semibold tracking-wider">{project.technology}</h5>
+              <ul className="mt-2 list-disc list-inside text-gray-200 space-y-1">
+                {project.description.split("\n").map((line, idx) =>
+                  line.trim() !== '' ? (
+                    <li key={idx} className="leading-relaxed">{line}</li>
+                  ) : null
+                )}
+              </ul>
+              <div className="mt-6">
                 <Link
                   to={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className="font-semibold text-white flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg font-semibold transition hover:bg-orange-300"
                 >
-                  Live Link <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+                  <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
                 </Link>
               </div>
             </div>

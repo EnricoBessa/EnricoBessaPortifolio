@@ -11,9 +11,12 @@ const About = () => {
           Hello, I'm <span className="orange-gradient_text font-semibold drop-shadow">Enrico</span>
         </h1>
 
-        <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed">
+        <div className="mt-5 text-slate-400 text-lg mx-auto leading-relaxed text-justify">
           <p>
-            Software Engineer ...................
+            I am a Brazilian Software Engineering student, and throughout my journey, I have had the opportunity to work on diverse projects, such as developing a management software .....
+            These experiences allowed me to explore modern tools such as Spring Boot, Next.js, TailwindCSS, and React, as well as enhance my skills in problem-solving and delivering practical 
+            and efficient solutions. My goal is to create robust and intuitive systems that generate positive impact, valuing both technical aspects and user experience. Beyond the technical 
+            field, I aim to grow by learning new skills, such as .....
           </p>
         </div>
 

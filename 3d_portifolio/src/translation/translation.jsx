@@ -7,7 +7,7 @@ const resources = {
   en: {
     translation: {
       welcome: "Welcome",
-      about: "About us",
+      about: "About",
       home: "Home",
       projects: "Projects",
       contact: "Contact"
@@ -16,7 +16,7 @@ const resources = {
   pt: {
     translation: {
       welcome: "Bem-vindo",
-      about: "Sobre nós",
+      about: "Sobre",
       home: "Início",
       projects: "Projetos",
       contact: "Contato"

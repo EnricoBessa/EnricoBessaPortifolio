@@ -3,6 +3,10 @@
 export const skills = [
   {
     name: 'C#',
+    imageUrl: '/images/csharp.png',
+  },
+  {
+    name: 'DotNet',
     imageUrl: '/images/dotnet.svg',
   },
   {
@@ -11,11 +15,15 @@ export const skills = [
   },
   {
     name: 'HTML5',
-    imageUrl: '/images/html5.svg', 
+    imageUrl: '/images/html5.svg',
   },
   {
     name: 'CSS',
     imageUrl: '/images/css.svg',
+  },
+  {
+    name: 'Mysql',
+    imageUrl: '/images/mysql.svg',
   },
   {
     name: 'Python',
@@ -48,7 +56,7 @@ export const experience = [
   {
     title: "Support and Data Analysis Intern",
     company_name: "EMATER-MG",
-    icon: "/images/emater.png", 
+    icon: "/images/emater.png",
     iconBg: "white",
     date: "April 2023 - March 2024",
     points: [
@@ -59,7 +67,7 @@ export const experience = [
   {
     title: "Software Engineer Intern",
     company_name: "DTG Consultoria e Projetos",
-    icon: "/images/dtg.jpeg", 
+    icon: "/images/dtg.jpeg",
     iconBg: "white",
     date: "April 2024 - Present",
     points: [
@@ -73,7 +81,7 @@ export const education = [
   {
     title: "Technical Degree in IT",
     institution_name: "COTEMIG - College and High School",
-    icon: "/images/cotemig.png",  
+    icon: "/images/cotemig.png",
     iconBg: "white",
     date: "January 2020 - December 2022",
     points: [
@@ -84,7 +92,7 @@ export const education = [
   {
     title: "Bachelor's in Software Engineering",
     institution_name: "PUC Minas",
-    icon: "/images/puc.png",  
+    icon: "/images/puc.png",
     iconBg: "white",
     date: "January 2023 - Present",
     points: [
@@ -97,39 +105,106 @@ export const education = [
 export const projects = [
   {
     name: 'Portfolio Website',
-    description: 'A responsive portfolio website built with React and Tailwind CSS to showcase my skills and projects.',
-    IconUrl: '/images/react.svg', 
+    initialDescription: 'Um site responsivo para apresentar meus projetos, habilidades e experiências de forma profissional.',
+    technology: 'Tecnologias',
+    description: `
+    Frontend: React com Tailwind CSS para estilização moderna e responsiva
+    Design: Interface otimizada para desktop e mobile, com foco em usabilidade
+    Extra: Código modular, fácil de expandir e atualizar
+
+    Por que é valorizado:
+    Demonstra domínio de frontend moderno (React + Tailwind)
+    Serve como vitrine pessoal para recrutadores e empresas
+    Mostra preocupação com UI/UX e organização de conteúdo`,
+    IconUrl: '/images/react.svg',
     link: '',
     theme: 'bg-gradient-to-tr from-orange-400 to-red-500'
   },
   {
-    name: 'Task Manager API',
-    description: 'A RESTful API for managing tasks with user authentication, built using Node.js and MongoDB.',
-    IconUrl: '/images/nodejs.svg',
-    link: 'https://github.com/yourusername/task-manager-api',
-    theme: 'bg-gradient-to-tr from-green-400 to-green-600'
-  },
-  {
-    name: 'Weather App',
-    description: 'A simple weather app that fetches real-time weather data using the OpenWeatherMap API.',
-    IconUrl: '/images/javascript.svg',
-    link: 'https://your-weather-app-link.com',
-    theme: 'bg-gradient-to-tr from-blue-400 to-cyan-500'
-  },
-  {
-    name: 'Blog Platform',
-    description: 'A blog platform built with PHP and MySQL, supporting post creation, comments, and user roles.',
-    IconUrl: '/images/php.svg',
-    link: 'https://github.com/yourusername/blog-platform',
-    theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600'
-  },
-  {
-    name: 'Finance Tracker',
-    description: 'An app to track personal income and expenses, created with Python and SQLite.',
+    name: 'Plataforma de Quiz com IA ou Recomendação Personalizada',
+    initialDescription: 'Uma plataforma de quizzes com análise de desempenho e sugestões personalizadas com base nos erros.',
+    technology: 'Tecnologias',
+    description: `
+    Backend: Python (com Flask + Pandas) ou C#
+    Frontend: JS + HTML/CSS
+    Extra: API com recomendação personalizada (pode usar ML básico)
+
+    Por que é valorizado:
+    Liga com Educação (área em expansão)
+    Mostra lógica, análise de dados e foco no usuário`,
     IconUrl: '/images/python.svg',
-    link: 'https://github.com/yourusername/finance-tracker',
-    theme: 'bg-gradient-to-tr from-yellow-400 to-orange-500'
+    link: '#',
+    theme: 'bg-gradient-to-tr from-yellow-400 to-red-500'
   },
+  {
+    name: 'Plataforma Modular para Pequenos Negócios',
+    initialDescription: 'Aplicação personalizável com módulos como vendas, estoque, agenda e finanças.',
+    technology: 'Tecnologias',
+    description: `
+    Backend: C# com ASP.NET MVC ou Python
+    Frontend: HTML/CSS/JS
+    Banco: SQL Server, PostgreSQL
+    Extra: Login por perfil (admin, cliente, vendedor), permissões, etc.
+
+    Por que é valorizado:
+    Aborda problemas reais de negócios
+    Mostra escalabilidade e arquitetura
+    Pode virar produto real`,
+    IconUrl: '/images/dotnet.svg',
+    link: '#',
+    theme: 'bg-gradient-to-tr from-orange-400 to-red-500'
+  },
+  {
+    name: 'Plataforma SaaS Simples',
+    initialDescription: 'Sistema web com autenticação, planos gratuitos e pagos, e funcionalidades úteis como CRM e agendamentos.',
+    technology: 'Tecnologias',
+    description: `
+    Backend: C# com ASP.NET Core ou Python (Flask/Django)
+    Frontend: HTML/CSS + JS ou framework como React
+    Banco: SQL Server ou PostgreSQL
+    Extra: Deploy na nuvem (Render, Azure, Vercel)
+
+    Por que é valorizado:
+    Mostra domínio de arquitetura fullstack
+    Mostra entendimento de produto (UX/UI, problema x solução)
+    SaaS está em alta no mercado`,
+    IconUrl: '/images/html5.svg',
+    link: '#',
+    theme: 'bg-gradient-to-tr from-purple-400 to-pink-500'
+  },
+  {
+    name: 'Dashboard de Monitoramento de Rede ou Infraestrutura',
+    initialDescription: 'Sistema que monitora máquinas, IPs, tráfego de rede e recursos do sistema em tempo real.',
+    technology: 'Tecnologias',
+    description: `
+    Backend: Python com psutil, ping3 ou socket, ou C#
+    Frontend: Dashboard com JS ou React
+    Banco: SQLite ou PostgreSQL
+    Extra: Gráficos com Chart.js ou Recharts
+
+    Por que é valorizado:
+    Mostra conhecimento em redes e sistemas
+    Serve como ferramenta prática para empresas
+    Pode evoluir para DevOps/SRE`,
+    IconUrl: '/images/python.svg',
+    link: '#',
+    theme: 'bg-gradient-to-tr from-blue-500 to-indigo-600'
+  },
+  {
+    name: 'Sistema de RH ou Controle de Vagas com Recrutamento Inteligente',
+    initialDescription: 'Plataforma para empresas publicarem vagas e receberem recomendações inteligentes de candidatos.',
+    technology: 'Tecnologias',
+    description: `
+    Backend: C# ou Python
+    Frontend: JS/HTML
+    Banco: SQL
+    Extra: Pode usar NLP (Processamento de Linguagem Natural) básico com Python para "match" de currículos
+
+    Por que é valorizado:
+    RH tech está crescendo muito
+    Mostra aplicação de lógica, design de sistema e pode até entrar em temas de IA`,
+    IconUrl: '/images/javascript.svg',
+    link: '#',
+    theme: 'bg-gradient-to-tr from-green-500 to-teal-600'
+  }
 ];
-
-
