@@ -61,21 +61,19 @@ const Contact = () => {
         <h1 className="head-text">Get in Touch</h1>
         <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
           <label className="text-black-500 font-semibold"> Name</label>
-          <input type="text" name='name' className='input' placeholder='Maria' value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+          <input type="text" name='name' className='input rounded border border-white p-2' placeholder='Maria' value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 
           <label className="text-black-500 font-semibold"> Email</label>
-          <input type="text" name='email' className='input' placeholder='email@exemple.com' value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+          <input type="text" name='email' className='input rounded border border-white p-2' placeholder='email@exemple.com' value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
           {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
 
           <label className="text-black-500 font-semibold"> Your Message</label>
-          <textarea type="text" name='message' rows={4} className='textarea' placeholder='Message you want to send' value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} />
+          <textarea type="text" name='message' rows={4} className='textarea rounded border border-white p-2' placeholder='Message you want to send' value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} />
           {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
 
           <button type='submit' className='btn'>Submit</button>
           {success && <p className="text-green-400 text-sm mt-4">{success}</p>}
-
-
         </form>
       </div>
 
