@@ -118,7 +118,7 @@ export const projects = [
     Mostra preocupação com UI/UX e organização de conteúdo`,
     IconUrl: '/images/react.svg',
     link: '',
-    theme: 'bg-gradient-to-tr from-orange-400 to-red-500'
+    theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500' 
   },
   {
     name: 'Plataforma de Quiz com IA ou Recomendação Personalizada',
@@ -134,7 +134,7 @@ export const projects = [
     Mostra lógica, análise de dados e foco no usuário`,
     IconUrl: '/images/python.svg',
     link: '#',
-    theme: 'bg-gradient-to-tr from-yellow-400 to-red-500'
+    theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600' 
   },
   {
     name: 'Plataforma Modular para Pequenos Negócios',
@@ -152,7 +152,7 @@ export const projects = [
     Pode virar produto real`,
     IconUrl: '/images/dotnet.svg',
     link: '#',
-    theme: 'bg-gradient-to-tr from-orange-400 to-red-500'
+    theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500'  
   },
   {
     name: 'Plataforma SaaS Simples',
@@ -170,7 +170,7 @@ export const projects = [
     SaaS está em alta no mercado`,
     IconUrl: '/images/html5.svg',
     link: '#',
-    theme: 'bg-gradient-to-tr from-purple-400 to-pink-500'
+    theme: 'bg-gradient-to-tr from-pink-500 to-red-500' 
   },
   {
     name: 'Dashboard de Monitoramento de Rede ou Infraestrutura',
@@ -188,7 +188,7 @@ export const projects = [
     Pode evoluir para DevOps/SRE`,
     IconUrl: '/images/python.svg',
     link: '#',
-    theme: 'bg-gradient-to-tr from-blue-500 to-indigo-600'
+    theme: 'bg-gradient-to-tr from-blue-600 to-sky-500' 
   },
   {
     name: 'Sistema de RH ou Controle de Vagas com Recrutamento Inteligente',
@@ -205,6 +205,7 @@ export const projects = [
     Mostra aplicação de lógica, design de sistema e pode até entrar em temas de IA`,
     IconUrl: '/images/javascript.svg',
     link: '#',
-    theme: 'bg-gradient-to-tr from-green-500 to-teal-600'
+    theme: 'bg-gradient-to-tr from-lime-400 to-green-600'  
   }
 ];
+
