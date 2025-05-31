@@ -3,21 +3,23 @@ import { projects } from '../constants';
 import { Link } from 'react-router-dom';
 import CTA from '../components/CTA';
 import arrow from '/images/arrow.png';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
-          My <span className="orange-gradient_text font-semibold drop-shadow">Projects</span>
+          {t('projects_title')} <span className="orange-gradient_text font-semibold drop-shadow">{t('projects_span')}</span>
         </h1>
 
-        <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed">
-          <p>
-            I've embarked ........................ those are .........
-          </p>
+        <div className="mt-5 text-slate-400 text-lg mx-auto leading-relaxed text-justify">
+          <p>{t('projects_intro')}</p>
         </div>
       </div>
+
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
           <div className="lg:w-[400px] w-full" key={project.name}>

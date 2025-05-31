@@ -208,4 +208,3 @@ export const projects = [
     theme: 'bg-gradient-to-tr from-lime-400 to-green-600'  
   }
 ];
-
