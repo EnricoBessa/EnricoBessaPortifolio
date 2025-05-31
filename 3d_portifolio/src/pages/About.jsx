@@ -5,7 +5,7 @@ import CTA from '../components/CTA';
 
 const About = () => {
   return (
-    <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
+    <section className="contact-page w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
           Hello, I'm <span className="orange-gradient_text font-semibold drop-shadow">Enrico</span>
@@ -13,7 +13,7 @@ const About = () => {
 
         <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed">
           <p>
-            Software Engineer based in Croatia, specializing in technical education through hands-on learning and building applications.
+            Software Engineer ...................
           </p>
         </div>
 

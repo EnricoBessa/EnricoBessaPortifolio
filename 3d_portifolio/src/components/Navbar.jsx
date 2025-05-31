@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState('PT'); // Começa com PT
 
   const links = [
     { to: '/', label: 'Home' },
@@ -13,8 +14,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-[#1F1F1F] bg-opacity-95 shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="!text-white font-extrabold text-2xl tracking-wide">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-center items-center">
+        <div className="absolute left-6 top-1/2 -translate-y-1/2 !text-white font-extrabold text-2xl tracking-wide">
           Enrico<span className="text-orange-400">Dev</span>
         </div>
 
@@ -25,8 +26,7 @@ const Navbar = () => {
               key={to}
               to={to}
               className={({ isActive }) =>
-                `!text-white hover:text-white transition-colors duration-300 font-medium pb-1 ${
-                  isActive ? 'border-b-2 border-orange-500' : ''
+                `!text-white hover:!text-white transition-colors duration-300 font-medium pb-1 ${isActive ? 'border-b-2 border-orange-500' : ''
                 }`
               }
               end
@@ -35,6 +35,23 @@ const Navbar = () => {
             </NavLink>
           ))}
         </div>
+
+        {/* Botões de idioma */}
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 flex gap-2">
+          <button
+            className={`btnlenguage-nav ${selectedLang === 'PT' ? 'selected' : ''}`}
+            onClick={() => setSelectedLang('PT')}
+          >
+            PT
+          </button>
+          <button
+            className={`btnlenguage-nav ${selectedLang === 'EN' ? 'selected' : ''}`}
+            onClick={() => setSelectedLang('EN')}
+          >
+            EN
+          </button>
+        </div>
+
 
         {/* Botão hamburger mobile */}
         <button
@@ -66,10 +83,9 @@ const Navbar = () => {
             <NavLink
               key={to}
               to={to}
-              onClick={() => setIsOpen(false)} 
+              onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `block !text-white hover:text-orange-400 font-medium ${
-                  isActive ? 'border-l-4 border-orange-500 pl-2' : ''
+                `block !text-white hover:!text-orange-400 font-medium ${isActive ? 'border-l-4 border-orange-500 pl-2' : ''
                 }`
               }
               end
@@ -79,6 +95,7 @@ const Navbar = () => {
           ))}
         </div>
       )}
+
     </nav>
   );
 };
