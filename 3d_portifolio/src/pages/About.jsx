@@ -1,27 +1,35 @@
-import { skills, experience, education } from '../constants';
+import { experience as experienceEn } from '../constants/experience.en';
+import { experience as experiencePt } from '../constants/experience.pt';
+import { education as educationEn } from '../constants/education.en';
+import { education as educationPt } from '../constants/education.pt';
+import { skills } from '../constants/index';
+
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t, i18n } = useTranslation();
+
+  const experience = i18n.language === 'pt' ? experiencePt : experienceEn;
+  const education = i18n.language === 'pt' ? educationPt : educationEn;
+
   return (
     <section className="contact-page w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
-          Hello, I'm <span className="orange-gradient_text font-semibold drop-shadow">Enrico</span>
+          {t('about_title')} <span className="orange-gradient_text font-semibold drop-shadow">Enrico</span>
         </h1>
 
         <div className="mt-5 text-slate-400 text-lg mx-auto leading-relaxed text-justify">
-          <p>
-            I am a Brazilian Software Engineering student, and throughout my journey, I have had the opportunity to work on diverse projects, such as developing a management software .....
-            These experiences allowed me to explore modern tools such as Spring Boot, Next.js, TailwindCSS, and React, as well as enhance my skills in problem-solving and delivering practical 
-            and efficient solutions. My goal is to create robust and intuitive systems that generate positive impact, valuing both technical aspects and user experience. Beyond the technical 
-            field, I aim to grow by learning new skills, such as .....
-          </p>
+          <p>{t('about_intro')}</p>
         </div>
 
         <div className="mt-14">
-          <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2">My Skills</h3>
+          <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2">
+            {t('about_my_skills')}
+          </h3>
           <div className="flex flex-wrap gap-4 justify-center">
             {skills.map((skill, index) => (
               <div key={index} className="block-container w-20 h-20 transition-transform duration-300 hover:scale-110">
@@ -36,11 +44,11 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2 text-center">Education</h3>
+        <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2 text-center">
+          {t('about_education')}
+        </h3>
         <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed text-center">
-          <p>
-            I've stduied ......................................................  :
-          </p>
+          <p>{t('about_education_intro')}</p>
         </div>
 
         <div className="mt-12">
@@ -48,7 +56,7 @@ const About = () => {
             {education.map((edu, index) => (
               <VerticalTimelineElement
                 key={index}
-                date={<div className="flex justify-center"> {edu.date} </div>}
+                date={<div className="flex justify-center">{edu.date}</div>}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
                     <img src={edu.icon} alt={edu.institution_name} className="w-[70%] h-[70%] object-contain" />
@@ -78,11 +86,11 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2 text-center">Experience</h3>
+        <h3 className="text-3xl font-semibold text-white mb-8 border-b border-slate-600 pb-2 text-center">
+          {t('about_experience')}
+        </h3>
         <div className="mt-5 text-slate-400 text-lg max-w-prose mx-auto leading-relaxed text-center">
-          <p>
-            I've worked with all sorts of companies, leveling up my skills and teaming up with smart people. Here's the rundown:
-          </p>
+          <p>{t('about_experience_intro')}</p>
         </div>
 
         <div className="mt-12">
@@ -90,7 +98,7 @@ const About = () => {
             {experience.map((exp, index) => (
               <VerticalTimelineElement
                 key={index}
-                date={<div className="flex justify-center"> {exp.date} </div>}
+                date={<div className="flex justify-center">{exp.date}</div>}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
                     <img src={exp.icon} alt={exp.company_name} className="w-[65%] h-[65%] object-contain" />
@@ -119,8 +127,8 @@ const About = () => {
         </div>
       </div>
 
-      <hr className="border-slate-50-200 "/>
-      <CTA/>
+      <hr className="border-slate-50-200 " />
+      <CTA />
     </section>
   );
 };
