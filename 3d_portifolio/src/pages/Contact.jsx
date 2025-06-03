@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
-      <div className="flex-1 min-w-[50%] flex flex-col">
+      <div className="flex-1 max-w-[50%] flex flex-col mx-auto">
         <h1 className="head-text">{t('contact_title')}</h1>
 
         <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
