@@ -59,65 +59,65 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
-      <div className="flex-1 max-w-[50%] flex flex-col mx-auto">
-        <h1 className="head-text">{t('contact_title')}</h1>
+    <>
+      <section className="w-full px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
+        <div className="flex-1 max-w-[50%] flex flex-col mx-auto">
+          <h1 className="head-text">{t('contact_title')}</h1>
 
-        <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
-          <div className="flex flex-wrap items-center space-x-2">
-            <FaUser className="text-gray-400" />
-            <label className="text-black-500 font-semibold">{t('name')}</label>
-          </div>
+          <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
+            <div className="flex flex-wrap items-center space-x-2">
+              <FaUser className="text-gray-400" />
+              <label className="text-black-500 font-semibold">{t('name')}</label>
+            </div>
 
-          <input
-            type="text"
-            name="name"
-            className="input rounded border border-white p-2"
-            placeholder={t('placeholder_name')}
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-          />
-          {errors.name && <p className="text-red-500 text-sm">{t(errors.name)}</p>}
+            <input
+              type="text"
+              name="name"
+              className="input rounded border border-white p-2"
+              placeholder={t('placeholder_name')}
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+            />
+            {errors.name && <p className="text-red-500 text-sm">{t(errors.name)}</p>}
 
-          <div className="flex flex-wrap items-center space-x-2">
-            <FaEnvelope className="text-gray-400" />
-            <label className="text-black-500 font-semibold">{t('email')}</label>
-          </div>
-          <input
-            type="text"
-            name="email"
-            className="input rounded border border-white p-2"
-            placeholder={t('placeholder_email')}
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
-          />
-          {errors.email && <p className="text-red-500 text-sm">{t(errors.email)}</p>}
+            <div className="flex flex-wrap items-center space-x-2">
+              <FaEnvelope className="text-gray-400" />
+              <label className="text-black-500 font-semibold">{t('email')}</label>
+            </div>
+            <input
+              type="text"
+              name="email"
+              className="input rounded border border-white p-2"
+              placeholder={t('placeholder_email')}
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
+            />
+            {errors.email && <p className="text-red-500 text-sm">{t(errors.email)}</p>}
 
-          <div className="flex flex-wrap items-center space-x-2">
-            <FaCommentDots className="text-gray-400" />
-            <label className="text-black-500 font-semibold">{t('message')}</label>
-          </div>
-          <textarea
-            name="message"
-            rows={4}
-            className="textarea rounded border border-white p-2"
-            placeholder={t('placeholder_message')}
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-          />
-          {errors.message && <p className="text-red-500 text-sm">{t(errors.message)}</p>}
+            <div className="flex flex-wrap items-center space-x-2">
+              <FaCommentDots className="text-gray-400" />
+              <label className="text-black-500 font-semibold">{t('message')}</label>
+            </div>
+            <textarea
+              name="message"
+              rows={4}
+              className="textarea rounded border border-white p-2"
+              placeholder={t('placeholder_message')}
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+            />
+            {errors.message && <p className="text-red-500 text-sm">{t(errors.message)}</p>}
 
-          <div className="flex justify-end">
-            <button type="submit" className="btn">{t('submit')}</button>
-          </div>
+            <div className="flex justify-end">
+              <button type="submit" className="btn">{t('submit')}</button>
+            </div>
 
-          {success && <p className="text-green-400 text-sm mt-4">{t(success)}</p>}
-        </form>
-      </div>
-
-      <hr className="border-slate-50-200 mt-6" />
+            {success && <p className="text-green-400 text-sm mt-4">{t(success)}</p>}
+          </form>
+        </div>
+      </section>
       <CTA_Profiles />
-    </section>
+    </>
   );
 };
 

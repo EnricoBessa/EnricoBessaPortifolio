@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CTA_Profiles = () => {
     return (
-        <section>
+        <footer>
             <div className="w-full flex sm:flex-row justify-end mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-0 sm:space-x-6 flex-wrap">
                 <a className='m-2' href="https://github.com/EnricoBessa" target="_blank" rel="noopener noreferrer">
                     <img src="/images/github-logo.svg" alt="GitHub" />
@@ -20,7 +20,7 @@ const CTA_Profiles = () => {
                     <img src="/images/whatsapp.svg" alt="Whatsapp" />
                 </a>
             </div>
-        </section>
+        </footer>
     )
 }
 
