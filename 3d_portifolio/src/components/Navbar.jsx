@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const links = [
-    { to: '/', label: t('home') },
+    //{ to: '/', label: t('home') },
     { to: '/about', label: t('about') },
     { to: '/projects', label: t('projects') },
     { to: '/contact', label: t('contact') }

@@ -15,6 +15,10 @@ const CTA_Profiles = () => {
                 <a href="https://mail.google.com/mail/?view=cm&to=enricobessa@gmail.com" target="_blank" rel="noopener noreferrer">
                     <img src="/images/mail.svg" alt="Email" />
                 </a>
+
+                <a href="https://wa.me/5531999481929" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/whatsapp.svg" alt="Whatsapp" />
+                </a>
             </div>
         </section>
     )
