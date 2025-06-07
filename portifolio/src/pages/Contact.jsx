@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
+      <section className="min-h-screen px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
         <div className="flex-1 max-w-[50%] flex flex-col mx-auto">
           <h1 className="head-text">{t('contact_title')}</h1>
 
