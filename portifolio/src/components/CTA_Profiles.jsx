@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const CTA_Profiles = () => {
     return (
         <footer>
-            <div className="w-full flex sm:flex-row justify-end mx-auto px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-0 sm:space-x-6 flex-wrap">
+            <div className="flex justify-end flex-wrap gap-4 px-4 sm:px-6 lg:px-8">
                 <a className='m-2' href="https://github.com/EnricoBessa" target="_blank" rel="noopener noreferrer">
                     <img src="/images/github-logo.svg" alt="GitHub" />
                 </a>
