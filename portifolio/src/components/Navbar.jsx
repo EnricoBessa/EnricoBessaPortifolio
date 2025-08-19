@@ -85,14 +85,37 @@ const Navbar = () => {
       {/* Menu mobile */}
       {isOpen && (
         <div className="sm:hidden bg-[#1F1F1F] px-6 pb-4 space-y-4">
+
+          <div className="w-full flex items-center justify-between mb-8">
+            {/* Título EnricoDev */}
+            <div className="left-4 text-white font-extrabold text-2xl tracking-wide">
+              Enrico<span className="text-orange-400">Dev</span>
+            </div>
+
+            {/* Botões de idioma */}
+            <div className="flex gap-4">
+              <button className={`btnlenguage-nav ${currentLang === 'PT' ? 'selected' : ''}`} onClick={() => changeLanguage('pt')}>
+                PT
+              </button>
+              <button className={`btnlenguage-nav ${currentLang === 'EN' ? 'selected' : ''}`} onClick={() => changeLanguage('en')}>
+                EN
+              </button>
+            </div>
+
+            {/* Botão de fechar (X) */}
+            <button
+              className="text-white border border-white rounded px-2" onClick={() => setIsOpen(false)} aria-label="Fechar menu">✕
+            </button>
+          </div>
+
+          {/* Links */}
           {links.map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `block !text-white hover:!text-orange-400 font-medium ${isActive ? 'border-l-4 border-orange-500 pl-2' : ''
-                }`
+                `block !text-white hover:!text-orange-400 font-medium ${isActive ? 'border-l-4 border-orange-500 pl-2' : ''}`
               }
               end
             >
