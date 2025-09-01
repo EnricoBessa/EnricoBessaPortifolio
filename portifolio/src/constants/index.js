@@ -73,37 +73,25 @@ export const projects = [
     theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500'
   },
   {
-    name: 'Plataforma de Quiz com IA ou Recomendação Personalizada',
-    initialDescription: 'Uma plataforma de quizzes com análise de desempenho e sugestões personalizadas com base nos erros.',
+    name: 'AimTrainer',
+    initialDescription: 'Jogo de treino de mira feito com base principal na biblioteca pygame.',
     technology: 'Tecnologias',
     description: `
-    Backend: Python (com Flask + Pandas) ou C#
-    Frontend: JS + HTML/CSS
-    Extra: API com recomendação personalizada (pode usar ML básico)
-
-    Por que é valorizado:
-    Liga com Educação (área em expansão)
-    Mostra lógica, análise de dados e foco no usuário`,
+    Backend: Python
+    Extra: pygame`,
     IconUrl: '/images/python.svg',
-    link: '#',
+    link: 'https://github.com/EnricoBessa/AimTrainer',
     theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600'
   },
   {
-    name: 'Plataforma Modular para Pequenos Negócios',
+    name: 'AiAgent',
     initialDescription: 'Aplicação personalizável com módulos como vendas, estoque, agenda e finanças.',
     technology: 'Tecnologias',
     description: `
-    Backend: C# com ASP.NET MVC ou Python
-    Frontend: HTML/CSS/JS
-    Banco: SQL Server, PostgreSQL
-    Extra: Login por perfil (admin, cliente, vendedor), permissões, etc.
-
-    Por que é valorizado:
-    Aborda problemas reais de negócios
-    Mostra escalabilidade e arquitetura
-    Pode virar produto real`,
-    IconUrl: '/images/dotnet.svg',
-    link: '#',
+    Backend: Python com integração ao Ollama
+    IA: Modelo Gemma 3B para respostas conversacionais`,
+    IconUrl: '/images/python.svg',
+    link: 'https://github.com/EnricoBessa/AiAgent',
     theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500'
   },
   {
