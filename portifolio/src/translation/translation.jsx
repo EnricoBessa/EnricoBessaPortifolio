@@ -65,8 +65,7 @@ const resources = {
             "Aim training game mainly built with the pygame library.",
           technology: "Technologies",
           description: `
-          Backend: Python
-          Extra: pygame`,
+          Backend: Python with Pygame integration`,
           IconUrl: '/images/python.svg',
           theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',          
           link: 'https://github.com/EnricoBessa/AimTrainer',
@@ -169,8 +168,7 @@ const resources = {
             "Jogo de treino de mira feito com base principal na biblioteca pygame.",
           technology: "Tecnologias",
           description: `
-          Backend: Python
-          Extra: pygame`,
+          Backend: Python usando integração ao Pygame`,
           IconUrl: '/images/python.svg',
           theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',
           link: 'https://github.com/EnricoBessa/AimTrainer',
