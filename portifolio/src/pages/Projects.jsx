@@ -1,5 +1,4 @@
 import React from 'react';
-import { projects } from '../constants/index';
 import { Link } from 'react-router-dom';
 import CTA from '../components/CTA';
 import arrow from '/images/arrow.png';
@@ -7,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
   const { t } = useTranslation();
+  const projects = t("projects_list", { returnObjects: true });
 
   return (
     <>

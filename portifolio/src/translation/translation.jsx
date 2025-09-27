@@ -40,6 +40,62 @@ const resources = {
       projects_span: "Projects",
       projects_intro: "I've embarked on a variety of projects that showcase my problem-solving skills, technological expertise, and clean code. The following projects are the ones I'm most proud of — each one has taught me new things and helped me grow as a developer.",
 
+      projects_list: [
+        {
+          name: "Portfolio Website",
+          initialDescription:
+            "A responsive website to showcase my projects, skills, and experiences in a professional way.",
+          technology: "Technologies",
+          description: `
+          Frontend: React with Tailwind CSS for a modern and responsive design
+          Design: Optimized interface for desktop and mobile, with focus on usability
+          Extra: Modular code, easy to expand and update
+
+          Why it is valued:
+          Demonstrates mastery of modern frontend (React + Tailwind)
+          Serves as a personal portfolio for recruiters and companies
+          Shows attention to UI/UX and content organization`,
+          IconUrl: '/images/react.svg',
+          theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500',
+          link: 'https://github.com/EnricoBessa/EnricoBessaPortifolio'
+        },
+        {
+          name: "AimTrainer",
+          initialDescription:
+            "Aim training game mainly built with the pygame library.",
+          technology: "Technologies",
+          description: `
+          Backend: Python
+          Extra: pygame`,
+          IconUrl: '/images/python.svg',
+          theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',          
+          link: 'https://github.com/EnricoBessa/AimTrainer',
+        },
+        {
+          name: "AiAgent",
+          initialDescription:
+            "Customizable application with modules like sales, inventory, scheduling, and finance.",
+          technology: "Technologies",
+          description: `
+          Backend: Python with Ollama integration
+          AI: Gemma 3B model for conversational responses`,
+          IconUrl: '/images/python.svg',
+          theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500',
+          link: 'https://github.com/EnricoBessa/AiAgent',
+        },
+        {
+          name: "Fitness App",
+          initialDescription:
+            "A Flutter app designed to display workout categories, recommended diets, and popular diets.",
+          technology: "Technologies",
+          description: `
+          Frontend: Flutter with responsive interface and cross-platform support (Android/iOS)
+          Design: Modern and minimalistic UI, using SVGs and dynamic lists`,
+          IconUrl: '/images/flutter.svg',
+          theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
+          link: 'https://github.com/EnricoBessa/FitnessApp',
+        },
+      ],
 
       //About 
       about_title: "Hello, I'm",
@@ -87,6 +143,63 @@ const resources = {
       projects_title: "Meus",
       projects_span: "Projetos",
       projects_intro: "Embarquei em uma variedade de projetos que mostram minha capacidade de solucionar problemas, meu conhecimento tecnológico e código limpo. Os trabalhos abaixo são os que mais me orgulham — cada um me serviu como um novo aprendizado e me ajudou a crescer como desenvolvedor.",
+
+      projects_list: [
+        {
+          name: "Portfolio Website",
+          initialDescription:
+            "Um site responsivo para apresentar meus projetos, habilidades e experiências de forma profissional.",
+          technology: "Tecnologias",
+          description: `
+          Frontend: React com Tailwind CSS para estilização moderna e responsiva
+          Design: Interface otimizada para desktop e mobile, com foco em usabilidade
+          Extra: Código modular, fácil de expandir e atualizar
+
+          Por que é valorizado:
+          Demonstra domínio de frontend moderno (React + Tailwind)
+          Serve como vitrine pessoal para recrutadores e empresas
+          Mostra preocupação com UI/UX e organização de conteúdo`,
+          IconUrl: '/images/react.svg',
+          theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500',
+          link: 'https://github.com/EnricoBessa/EnricoBessaPortifolio'
+        },
+        {
+          name: "AimTrainer",
+          initialDescription:
+            "Jogo de treino de mira feito com base principal na biblioteca pygame.",
+          technology: "Tecnologias",
+          description: `
+          Backend: Python
+          Extra: pygame`,
+          IconUrl: '/images/python.svg',
+          theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',
+          link: 'https://github.com/EnricoBessa/AimTrainer',
+        },
+        {
+          name: "AiAgent",
+          initialDescription:
+            "Aplicação personalizável com módulos como vendas, estoque, agenda e finanças.",
+          technology: "Tecnologias",
+          description: `
+          Backend: Python com integração ao Ollama
+          IA: Modelo Gemma 3B para respostas conversacionais`,
+          IconUrl: '/images/python.svg',
+          theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500',
+          link: 'https://github.com/EnricoBessa/AiAgent',
+        },
+        {
+          name: "Fitness App",
+          initialDescription:
+            "Um aplicativo desenvolvido em Flutter com o objetivo de exibir categorias de treinos, dietas recomendadas e dietas populares.",
+          technology: "Tecnologias",
+          description: `
+          Frontend: Flutter com interface responsiva e suporte multiplataforma (Android/iOS)
+          Design: Visual moderno e minimalista, utilizando SVGs e listas dinâmicas`,
+          IconUrl: '/images/flutter.svg',
+          theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
+          link: 'https://github.com/EnricoBessa/FitnessApp',
+        },
+      ],
 
       //About 
       about_title: "Olá, eu sou",
