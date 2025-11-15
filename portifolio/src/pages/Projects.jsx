@@ -10,52 +10,71 @@ const Projects = () => {
 
   return (
     <>
-      <section className="px-6 pt-16 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-extrabold text-white drop-shadow-lg">
-            {t('projects_title')} <span className="orange-gradient_text font-semibold drop-shadow">{t('projects_span')}</span>
+      <section className="px-6 pt-28 pb-20 bg-gradient-to-br from-[#0c0c0c] via-[#141414] to-[#0c0c0c] relative overflow-hidden">
+
+        {/* Glow Background */}
+        <div className="absolute inset-0 flex justify-center pointer-events-none">
+          <div className="w-[600px] h-[300px] bg-orange-500/20 blur-[150px] rounded-full"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative max-w-6xl mx-auto text-center">
+          <h1 className="text-6xl font-extrabold bg-gradient-to-r from-orange-300 via-orange-100 to-white bg-clip-text text-transparent drop-shadow-xl">
+            {t('projects_title')}{" "}
+            <span className="font-extrabold text-white">{t('projects_span')}</span>
           </h1>
 
-          <div className="mt-5 text-slate-400 text-lg mx-auto leading-relaxed text-justify">
-            <p>{t('projects_intro')}</p>
+          <div className="mt-6 text-slate-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="opacity-90">{t('projects_intro')}</p>
           </div>
         </div>
 
-        <div className="flex flex-wrap my-20 gap-16">
+        {/* Cards */}
+        <div className="projects-grid mt-20">
           {projects.map((project) => (
-            <div className="lg:w-[400px] w-full" key={project.name}>
-              <div className="block-container w-12 h-12">
-                <div className={`btn-back rounded-xl ${project.theme}`} />
-                <div className="btn-front rounded-xl flex justify-center items-center">
-                  <img src={project.IconUrl} alt="project icon" className="w-1/2 h-1/2 object-contain" />
-                </div>
+            <Link
+              to={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={project.name}
+              className="project-card group cursor-pointer"
+            >
+
+              {/* Ícone */}
+              <div className="project-icon-wrapper bg-white/10 backdrop-blur-md">
+                <img
+                  src={project.IconUrl}
+                  alt="project icon"
+                  className="project-icon"
+                />
               </div>
-              <div className="mt-5 flex flex-col bg-black/10 p-5 rounded-2xl shadow-lg backdrop-blur-sm">
-                <h4 className="text-3xl font-bold text-white mb-1">{project.name}</h4>
-                <p className="text-gray-300 text-base mb-3">{project.initialDescription}</p>
-                <h5 className="text-orange-300 text-sm uppercase font-semibold tracking-wider">{project.technology}</h5>
-                <ul className="mt-2 list-disc list-inside text-gray-200 space-y-1">
-                  {project.description.split("\n").map((line, idx) =>
-                    line.trim() !== '' ? (
-                      <li key={idx} className="leading-relaxed">{line}</li>
-                    ) : null
-                  )}
-                </ul>
-                <div className="mt-6">
-                  <Link
-                    to={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg font-semibold transition hover:bg-orange-300"
-                  >
-                    <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+
+              {/* Título */}
+              <h4 className="text-2xl font-bold text-white group-hover:text-orange-300 transition">
+                {project.name}
+              </h4>
+
+              {/* Descrição curta */}
+              <p className="text-gray-300 mt-2">{project.initialDescription}</p>
+
+              {/* Tecnologias */}
+              <h5 className="text-orange-300 text-sm uppercase font-semibold mt-3 tracking-wider">
+                {project.technology}
+              </h5>
+
+              {/* Lista de detalhes */}
+              <ul className="mt-3 list-disc list-inside text-gray-200 space-y-1 text-sm">
+                {project.description.split("\n").map(
+                  (line, idx) =>
+                    line.trim() !== "" && <li key={idx}>{line}</li>
+                )}
+              </ul>    
+            </Link>
           ))}
         </div>
+
       </section>
+
       <CTA />
     </>
   );

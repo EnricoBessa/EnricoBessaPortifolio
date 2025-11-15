@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation(); // ✅ correto
+  const { t, i18n } = useTranslation(); 
   const [isOpen, setIsOpen] = useState(false);
   const currentLang = i18n.language.toUpperCase();
 
@@ -15,7 +15,7 @@ const Navbar = () => {
     //{ to: '/', label: t('home') },
     { to: '/about', label: t('about') },
     { to: '/projects', label: t('projects') },
-    { to: '/contact', label: t('contact') }
+    //{ to: '/contact', label: t('contact') }
   ];
 
   return (

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import CTA_Profiles from '../components/CTA_Profiles';
-import { FaUser, FaEnvelope, FaCommentDots } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaCommentDots, FaLinkedin, FaGithub, FaAt } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
@@ -18,10 +17,7 @@ const Contact = () => {
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
       newErrors.email = 'error_email_invalid';
     }
-
-    if (form.message.trim().length < 10)
-      newErrors.message = 'error_message';
-
+    if (form.message.trim().length < 10) newErrors.message = 'error_message';
     return newErrors;
   };
 
@@ -49,74 +45,138 @@ const Contact = () => {
         message: form.message,
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-    ).then(() => {
-      setSuccess('success');
-      setForm({ name: '', email: '', message: '' });
-    }).catch((error) => {
-      console.error('Email error:', error);
-      setSuccess('error_send');
-    });
+    )
+      .then(() => {
+        setSuccess('success');
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        console.error('Email error:', error);
+        setSuccess('error_send');
+      });
   };
 
   return (
     <>
-      <section className="min-h-screen px-6 pt-28 pb-16 bg-gradient-to-br from-[#1F1F1F] via-[#2C2C2C] to-[#1F1F1F] shadow-lg">
-        <div className="flex-1 max-w-[50%] flex flex-col mx-auto">
-          <h1 className="head-text">{t('contact_title')}</h1>
+      <section className="min-h-[80vh] px-6 pt-24 pb-10 bg-[#1F1F1F]">
+        <div className="flex-1 max-w-[600px] mx-auto">
 
-          <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
-            <div className="flex flex-wrap items-center space-x-2">
-              <FaUser className="text-gray-400" />
-              <label className="text-black-500 font-semibold">{t('name')}</label>
+          <h1 className="text-white text-3xl sm:text-4xl font-bold text-center">
+            {t('contact_title')}
+          </h1>
+
+          <form className="w-full flex flex-col gap-6 mt-10" onSubmit={handleSubmit}>
+            
+            {/* Nome */}
+            <div>
+              <div className="flex items-center space-x-2 mb-1">
+                <FaUser className="text-gray-400" />
+                <label className="text-gray-300 font-medium">{t('name')}</label>
+              </div>
+
+              <input
+                type="text"
+                name="name"
+                className="w-full rounded bg-[#2B2B2B] text-white p-2 border border-gray-600 focus:border-white focus:outline-none"
+                placeholder={t('placeholder_name')}
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+              />
+
+              {errors.name && (
+                <p className="text-red-400 text-sm mt-1">{t(errors.name)}</p>
+              )}
             </div>
 
-            <input
-              type="text"
-              name="name"
-              className="input rounded border border-white p-2"
-              placeholder={t('placeholder_name')}
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-            />
-            {errors.name && <p className="text-red-500 text-sm">{t(errors.name)}</p>}
+            {/* Email */}
+            <div>
+              <div className="flex items-center space-x-2 mb-1">
+                <FaEnvelope className="text-gray-400" />
+                <label className="text-gray-300 font-medium">{t('email')}</label>
+              </div>
 
-            <div className="flex flex-wrap items-center space-x-2">
-              <FaEnvelope className="text-gray-400" />
-              <label className="text-black-500 font-semibold">{t('email')}</label>
+              <input
+                type="text"
+                name="email"
+                className="w-full rounded bg-[#2B2B2B] text-white p-2 border border-gray-600 focus:border-white focus:outline-none"
+                placeholder={t('placeholder_email')}
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+              />
+
+              {errors.email && (
+                <p className="text-red-400 text-sm mt-1">{t(errors.email)}</p>
+              )}
             </div>
-            <input
-              type="text"
-              name="email"
-              className="input rounded border border-white p-2"
-              placeholder={t('placeholder_email')}
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-            />
-            {errors.email && <p className="text-red-500 text-sm">{t(errors.email)}</p>}
 
-            <div className="flex flex-wrap items-center space-x-2">
-              <FaCommentDots className="text-gray-400" />
-              <label className="text-black-500 font-semibold">{t('message')}</label>
+            {/* Mensagem */}
+            <div>
+              <div className="flex items-center space-x-2 mb-1">
+                <FaCommentDots className="text-gray-400" />
+                <label className="text-gray-300 font-medium">{t('message')}</label>
+              </div>
+
+              <textarea
+                name="message"
+                rows={4}
+                className="w-full rounded bg-[#2B2B2B] text-white p-2 border border-gray-600 focus:border-white focus:outline-none"
+                placeholder={t('placeholder_message')}
+                value={form.message}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
+              />
+
+              {errors.message && (
+                <p className="text-red-400 text-sm mt-1">{t(errors.message)}</p>
+              )}
             </div>
-            <textarea
-              name="message"
-              rows={4}
-              className="textarea rounded border border-white p-2"
-              placeholder={t('placeholder_message')}
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-            />
-            {errors.message && <p className="text-red-500 text-sm">{t(errors.message)}</p>}
 
+            {/* Botão */}
             <div className="flex justify-end">
-              <button type="submit" className="btn">{t('submit')}</button>
+              <button type="submit" className="px-6 py-2 rounded bg-[#FF6A3D] hover:bg-[#e35c33] transition text-white font-semibold">
+                {t('submit')}
+              </button>
             </div>
 
-            {success && <p className="text-green-400 text-sm mt-4">{t(success)}</p>}
+            {success && (
+              <p className="text-green-400 text-sm mt-2">{t(success)}</p>
+            )}
           </form>
         </div>
       </section>
-      <CTA_Profiles />
+
+      {/* Redes Sociais (minimalista) */}
+      <section className="bg-[#1F1F1F] pb-14 flex flex-col items-center">
+        <h2 className="text-gray-300 text-lg font-medium mb-4">
+          {t('contact_socials') || 'Me encontre também em:'}
+        </h2>
+
+        <div className="flex space-x-6">
+          <a
+            href="https://www.linkedin.com/in/enricobessa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white text-3xl transition"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://github.com/EnricoBessa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white text-3xl transition"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="mailto:enricobessa@gmail.com"
+            className="text-gray-300 hover:text-white text-3xl transition"
+          >
+            <FaAt />
+          </a>
+        </div>
+      </section>
     </>
   );
 };

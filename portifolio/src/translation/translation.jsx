@@ -98,10 +98,10 @@ const resources = {
 
       //About 
       about_title: "Hello, I'm",
-      about_intro: "I am a Brazilian Software Engineering student, and throughout my journey, I have had the opportunity to work on diverse projects, such as developing a management software .....            These experiences allowed me to explore modern tools such as Spring Boot, Next.js, TailwindCSS, and React, as well as enhance my skills in problem-solving and delivering practical            and efficient solutions. My goal is to create robust and intuitive systems that generate positive impact, valuing both technical aspects and user experience. Beyond the technical            field, I aim to grow by learning new skills, such as .....",
+      about_intro: "I am a Software Engineering student at PUC Minas and hold a Technical degree in Computer Science from Cotemig. I have worked as an intern in several companies, utilizing languages such as Python, C#, .NET, HTML5, CSS, and Databases. I seek opportunities to apply and expand my knowledge in the field of software development, valuing teamwork to achieve common goals.",
       about_my_skills: "My Skills",
       about_education: "Education",
-      about_education_intro: "I've stduied ......................................................  :",
+      about_education_intro: "I studied at Cotemig School, where I began my learning in the field of computer science. I am currently pursuing a degree in Software Engineering at PUC Minas.",
       about_experience: "Experience",
       about_experience_intro: "I've worked with all sorts of companies, leveling up my skills and teaming up with smart people. Here's the rundown:",
 
@@ -201,10 +201,10 @@ const resources = {
 
       //About 
       about_title: "Olá, eu sou",
-      about_intro: "Sou um estudante brasileiro de Engenharia de Software e, ao longo da minha jornada, tive a oportunidade de trabalhar em projetos diversos, como o desenvolvimento de um software de gestão... Essas experiências me permitiram explorar ferramentas modernas como Spring Boot, Next.js, TailwindCSS e React, além de aprimorar minhas habilidades em resolução de problemas e na entrega de soluções práticas e eficientes. Meu objetivo é criar sistemas robustos e intuitivos que gerem impacto positivo, valorizando tanto os aspectos técnicos quanto a experiência do usuário. Além da área técnica, busco crescer aprendendo novas habilidades, como...",
+      about_intro: "Sou estudante de Engenharia de Software na PUC Minas e formado como Técnico em Informática pelo Cotemig. Já atuei como estagiário em algumas empresas, trabalhando com linguagens como Python, C#, .NET, HTML5, CSS e Banco de Dados. Busco oportunidades para aplicar e expandir meus conhecimentos na área de desenvolvimento de software, valorizando o trabalho em equipe para alcançar objetivos em comum.",
       about_my_skills: "Minhas Habilidades",
       about_education: "Formação",
-      about_education_intro: "Eu estudei ...................................................... :",
+      about_education_intro: "Eu estudei no colégio Cotemig, onde iniciei meu aprendizado na área de informática. Atualmente, curso Engenharia de Software na PUC Minas.",
       about_experience: "Experiência",
       about_experience_intro: "Trabalhei com diversos tipos de empresas, aprimorando minhas habilidades e colaborando com pessoas talentosas. Aqui está um resumo:",
     },
@@ -222,4 +222,4 @@ i18n
     },
   });
 
-export default i18n; 
+export default i18n;
