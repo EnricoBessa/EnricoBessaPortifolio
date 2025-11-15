@@ -55,7 +55,7 @@ const resources = {
           Demonstrates mastery of modern frontend (React + Tailwind)
           Serves as a personal portfolio for recruiters and companies
           Shows attention to UI/UX and content organization`,
-          IconUrl: '/images/react.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/react.svg',
           theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500',
           link: 'https://github.com/EnricoBessa/EnricoBessaPortifolio'
         },
@@ -66,7 +66,7 @@ const resources = {
           technology: "Technologies",
           description: `
           Backend: Python with Pygame integration`,
-          IconUrl: '/images/python.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/python.svg',
           theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',          
           link: 'https://github.com/EnricoBessa/AimTrainer',
         },
@@ -78,7 +78,7 @@ const resources = {
           description: `
           Backend: Python with Ollama integration
           AI: Gemma 3B model for conversational responses`,
-          IconUrl: '/images/python.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/python.svg',
           theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500',
           link: 'https://github.com/EnricoBessa/AiAgent',
         },
@@ -90,7 +90,7 @@ const resources = {
           description: `
           Frontend: Flutter with responsive interface and cross-platform support (Android/iOS)
           Design: Modern and minimalistic UI, using SVGs and dynamic lists`,
-          IconUrl: '/images/flutter.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/flutter.svg',
           theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
           link: 'https://github.com/EnricoBessa/FitnessApp',
         },
@@ -158,7 +158,7 @@ const resources = {
           Demonstra domínio de frontend moderno (React + Tailwind)
           Serve como vitrine pessoal para recrutadores e empresas
           Mostra preocupação com UI/UX e organização de conteúdo`,
-          IconUrl: '/images/react.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/react.svg',
           theme: 'bg-gradient-to-tr from-orange-400 to-yellow-500',
           link: 'https://github.com/EnricoBessa/EnricoBessaPortifolio'
         },
@@ -169,7 +169,7 @@ const resources = {
           technology: "Tecnologias",
           description: `
           Backend: Python usando integração ao Pygame`,
-          IconUrl: '/images/python.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/python.svg',
           theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',
           link: 'https://github.com/EnricoBessa/AimTrainer',
         },
@@ -181,7 +181,7 @@ const resources = {
           description: `
           Backend: Python com integração ao Ollama
           IA: Modelo Gemma 3B para respostas conversacionais`,
-          IconUrl: '/images/python.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/python.svg',
           theme: 'bg-gradient-to-tr from-teal-400 to-cyan-500',
           link: 'https://github.com/EnricoBessa/AiAgent',
         },
@@ -193,7 +193,7 @@ const resources = {
           description: `
           Frontend: Flutter com interface responsiva e suporte multiplataforma (Android/iOS)
           Design: Visual moderno e minimalista, utilizando SVGs e listas dinâmicas`,
-          IconUrl: '/images/flutter.svg',
+          IconUrl: '/EnricoBessaPortifolio/images/flutter.svg',
           theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
           link: 'https://github.com/EnricoBessa/FitnessApp',
         },
