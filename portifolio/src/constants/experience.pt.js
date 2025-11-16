@@ -4,7 +4,7 @@ export const experience = [
   {
     title: "Estagiário em Suporte e Análise de Dados",
     company_name: "EMATER-MG",
-    icon: "/images/emater.png",
+    icon: "/EnricoBessaPortifolio/images/emater.png",
     iconBg: "white",
     date: "Abril de 2023 - Março de 2024",
     points: [
@@ -15,7 +15,7 @@ export const experience = [
   {
     title: "Estagiário em Engenharia de Software",
     company_name: "DTG Consultoria e Projetos",
-    icon: "/images/dtg.jpeg",
+    icon: "/EnricoBessaPortifolio/images/dtg.jpeg",
     iconBg: "white",
     date: "Abril de 2024 - Presente",
     points: [

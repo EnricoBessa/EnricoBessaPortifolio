@@ -2,7 +2,7 @@ export const education = [
   {
     title: "Curso Técnico em Informática",
     institution_name: "COTEMIG - Colégio e Ensino Médio",
-    icon: "/images/cotemig.png",
+    icon: "/EnricoBessaPortifolio/images/cotemig.png",
     iconBg: "white",
     date: "Janeiro 2020 - Dezembro 2022",
     points: [
@@ -13,7 +13,7 @@ export const education = [
   {
     title: "Bacharelado em Engenharia de Software",
     institution_name: "PUC Minas",
-    icon: "/images/puc.png",
+    icon: "/EnricoBessaPortifolio/images/puc.png",
     iconBg: "white",
     date: "Janeiro 2023 - Atualmente",
     points: [

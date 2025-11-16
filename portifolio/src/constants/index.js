@@ -5,54 +5,54 @@
 export const skills = [
   {
     name: 'C#',
-    imageUrl: '/images/csharp.png',
+    imageUrl: '/EnricoBessaPortifolio/images/csharp.png',
   },
   {
     name: 'DotNet',
-    imageUrl: '/images/dotnet.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/dotnet.svg',
   },
   {
     name: 'JavaScript',
-    imageUrl: '/images/javascript.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/javascript.svg',
   },
   {
     name: 'HTML5',
-    imageUrl: '/images/html5.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/html5.svg',
   },
   {
     name: 'CSS',
-    imageUrl: '/images/css.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/css.svg',
   },
   {
     name: 'Mysql',
-    imageUrl: '/images/mysql.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/mysql.svg',
   },
   {
     name: 'Python',
-    imageUrl: '/images/python.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/python.svg',
   },
   {
     name: 'C',
-    imageUrl: '/images/c.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/c.svg',
   },
   // {
   //   name: 'PHP',
-  //   imageUrl: '/images/php.svg',
+  //   imageUrl: '/EnricoBessaPortifolio/images/php.svg',
   // },
   {
     name: 'Flutter',
-    imageUrl: '/images/flutter.svg',
+    imageUrl: '/EnricoBessaPortifolio/images/flutter.svg',
   },
   // {
   //   name: 'Networks',
-  //   imageUrl: '/images/network.png', 
+  //   imageUrl: '/EnricoBessaPortifolio/images/network.png', 
   // },
   // {
   //   name: 'Computer Architecture',
-  //   imageUrl: '/images/architecture.png',
+  //   imageUrl: '/EnricoBessaPortifolio/images/architecture.png',
   // },
   // {
   //   name: 'English (Intermediate)',
-  //   imageUrl: '/images/english.png',
+  //   imageUrl: '/EnricoBessaPortifolio/images/english.png',
   // },
 ];

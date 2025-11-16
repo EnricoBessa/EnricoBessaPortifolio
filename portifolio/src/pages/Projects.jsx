@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 const Projects = () => {
   const { t } = useTranslation();
   const projects = t("projects_list", { returnObjects: true });
+  const certificates = t("certificate_list", { returnObjects: true });
 
   return (
     <>
@@ -20,7 +21,7 @@ const Projects = () => {
         {/* Content */}
         <div className="relative max-w-6xl mx-auto text-center">
           <h1 className="text-6xl font-extrabold bg-gradient-to-r from-orange-300 via-orange-100 to-white bg-clip-text text-transparent drop-shadow-xl">
-            {t('projects_title')}{" "}
+            {t('projects_title')} {" "}
             <span className="font-extrabold text-white">{t('projects_span')}</span>
           </h1>
 
@@ -40,7 +41,6 @@ const Projects = () => {
               className="project-card group cursor-pointer"
             >
 
-              {/* Ícone */}
               <div className="project-icon-wrapper bg-white/10 backdrop-blur-md">
                 <img
                   src={project.IconUrl}
@@ -49,27 +49,46 @@ const Projects = () => {
                 />
               </div>
 
-              {/* Título */}
               <h4 className="text-2xl font-bold text-white group-hover:text-orange-300 transition">
                 {project.name}
               </h4>
 
-              {/* Descrição curta */}
               <p className="text-gray-300 mt-2">{project.initialDescription}</p>
 
-              {/* Tecnologias */}
               <h5 className="text-orange-300 text-sm uppercase font-semibold mt-3 tracking-wider">
                 {project.technology}
               </h5>
 
-              {/* Lista de detalhes */}
               <ul className="mt-3 list-disc list-inside text-gray-200 space-y-1 text-sm">
                 {project.description.split("\n").map(
                   (line, idx) =>
                     line.trim() !== "" && <li key={idx}>{line}</li>
                 )}
-              </ul>    
+              </ul>
             </Link>
+          ))}
+        </div>
+
+        {/* Certificates Section */}
+        <div className="relative max-w-6xl mx-auto text-center mt-32">
+          <h2 className="text-5xl font-extrabold text-white drop-shadow-xl">
+            {t('certificates_title')}
+          </h2>
+        </div>
+
+        {/* Certificate Grid */}
+        <div className="grid grid-cols-1 **gap-12** max-w-3xl mx-auto mt-16 px-4">
+          {certificates.map((cert, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img
+                src={cert.path}
+                alt={cert.name}
+                className="w-full **aspect-video** object-cover rounded-xl shadow-lg border border-white/10 mt-10"
+              />
+              <p className="text-gray-200 mt-4 text-xl font-medium text-center">
+                {cert.name}
+              </p>
+            </div>
           ))}
         </div>
 
