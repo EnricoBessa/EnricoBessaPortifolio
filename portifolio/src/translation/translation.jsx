@@ -67,7 +67,7 @@ const resources = {
           description: `
           Backend: Python with Pygame integration`,
           IconUrl: '/EnricoBessaPortifolio/images/python.svg',
-          theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',          
+          theme: 'bg-gradient-to-tr from-indigo-500 to-purple-600',
           link: 'https://github.com/EnricoBessa/AimTrainer',
         },
         {
@@ -93,6 +93,19 @@ const resources = {
           IconUrl: '/EnricoBessaPortifolio/images/flutter.svg',
           theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
           link: 'https://github.com/EnricoBessa/FitnessApp',
+        },
+      ],
+
+      certificates_title: "Certificates",
+
+      certificate_list: [
+        {
+          name: "Technical High School Certificate in Information Technology",
+          path: "/EnricoBessaPortifolio/certificados/CertificadoTecnico.jpeg",
+        },
+        {
+          name: "Certificate of Completion – Harvard's Computer Science Course in Brazil",
+          path: "/EnricoBessaPortifolio/certificados/CertificadoCienciaComputacaoHarvard.jpg",
         },
       ],
 
@@ -196,6 +209,19 @@ const resources = {
           IconUrl: '/EnricoBessaPortifolio/images/flutter.svg',
           theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
           link: 'https://github.com/EnricoBessa/FitnessApp',
+        },
+      ],
+
+      certificates_title: "Certificados",
+
+      certificate_list: [
+        {
+          name: "Certificado de conclusão ensino médio técnico em informatica",
+          path: "/EnricoBessaPortifolio/certificados/CertificadoTecnico.jpeg",
+        },
+        {
+          name: "Certificado de conclusão ciência da computação de Harvard no Brasil",
+          path: "/EnricoBessaPortifolio/certificados/CertificadoCienciaComputacaoHarvard.jpg",
         },
       ],
 

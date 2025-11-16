@@ -1,0 +1,8 @@
+APAGA A BRANCH
+git push origin --delete gh-pages
+
+RODA O PRADEPLOY
+npm run predeploy
+
+RODA O DEPLOY
+npm run deploy
