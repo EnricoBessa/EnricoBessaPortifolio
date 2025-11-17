@@ -38,9 +38,13 @@ Welcome to my online portfolio! Here you can explore my projects, skills, and ce
 
 🧑‍💻 **Access my website**: Enrico Bessa Portfolio
 
+---
+
 ## About Me
 
 I am **Enrico Bessa**, a developer passionate about technology, especially web development and computer science. In this portfolio, I share my most meaningful projects, achievements, and the courses I have completed.
+
+---
 
 ## What You Will Find Here
 
@@ -48,6 +52,8 @@ I am **Enrico Bessa**, a developer passionate about technology, especially web d
 - **Certificates:** courses I have completed and certifications I’ve earned throughout my journey.
 - **About Me:** a bit about my background, what motivates me, and my professional goals.
 - **Contact:** links to social networks, email, and other ways to reach me.
+
+---
 
 ## Technologies Used
 
@@ -57,3 +63,5 @@ Here are some of the main technologies I use in my projects:
 - **Frameworks / Libraries:** React, React Router
 - **Tools:** Git, GitHub, GitHub Pages (used to host this portfolio)
 - **Others:** Tailwind CSS (for styling), i18next (for translation)
+
+---
