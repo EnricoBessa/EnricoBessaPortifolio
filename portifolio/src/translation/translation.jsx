@@ -224,7 +224,7 @@ const resources = {
           link: 'https://github.com/EnricoBessa/AiAgent',
         },
         {
-          name: "Team & Task Management System",
+          name: "Gestão de times e tarefas",
           initialDescription:
             "Uma plataforma colaborativa projetada para organizar equipes, gerenciar tarefas e otimizar a produtividade em grupo.",
           technology: "Tecnologias",
