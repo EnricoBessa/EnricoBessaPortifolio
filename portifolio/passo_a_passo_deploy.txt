@@ -1,6 +1,9 @@
 APAGA A BRANCH
 git push origin --delete gh-pages
 
+ADICIONA PACOTE
+npm install gh-pages --save-dev
+
 RODA O PRADEPLOY
 npm run predeploy
 
