@@ -83,6 +83,23 @@ const resources = {
           link: 'https://github.com/EnricoBessa/AiAgent',
         },
         {
+          name: "Team & Task Management System",
+          initialDescription:
+            "A collaborative platform designed to organize teams, manage tasks and streamline group productivity.",
+          technology: "Technologies",
+          description: `
+          This project was developed as a group assignment for a college course, using a modern JavaScript-based stack.  
+          Frontend: Built with React, delivering a responsive and intuitive interface for viewing and managing teams and tasks.  
+          Backend: Implemented with Node.js and Express.  
+          Database: PostgreSQL was used for structured data storage.  
+          Summary: The platform allows users to organize teams, create and assign tasks, track progress through Kanban-style boards, and collaborate in real time with other members.  
+          `,
+          IconUrl: '/EnricoBessaPortifolio/images/javascript.svg',
+          theme: 'bg-gradient-to-tr from-green-500 to-blue-500',
+          link: 'https://github.com/EnricoBessa/trabalho-em-grupo_gestao-de-times-e-tarefas',
+        }
+        ,
+        {
           name: "Fitness App",
           initialDescription:
             "A Flutter app designed to display workout categories, recommended diets, and popular diets.",
@@ -93,7 +110,7 @@ const resources = {
           IconUrl: '/EnricoBessaPortifolio/images/flutter.svg',
           theme: 'bg-gradient-to-tr from-pink-500 to-red-500',
           link: 'https://github.com/EnricoBessa/FitnessApp',
-        },
+        }
       ],
 
       certificates_title: "Certificates",
@@ -106,6 +123,14 @@ const resources = {
         {
           name: "Certificate of Completion – Harvard's Computer Science Course in Brazil",
           path: "/EnricoBessaPortifolio/certificados/CertificadoCienciaComputacaoHarvard.jpg",
+        },
+        {
+          name: "Certificate in Python – Python course at Santander",
+          path: "/EnricoBessaPortifolio/certificados/ceritficado_python_santander.jpg",
+        },
+        {
+          Name: "Artificial Intelligence Certificate – AI Course for Small and Medium-Sized Businesses",
+          path: "/EnricoBessaPortifolio/certificados/certificado_cusro_ia_santander.jpg",
         },
       ],
 
@@ -199,6 +224,22 @@ const resources = {
           link: 'https://github.com/EnricoBessa/AiAgent',
         },
         {
+          name: "Team & Task Management System",
+          initialDescription:
+            "Uma plataforma colaborativa projetada para organizar equipes, gerenciar tarefas e otimizar a produtividade em grupo.",
+          technology: "Tecnologias",
+          description: `
+          Este projeto foi desenvolvido em grupo para uma disciplina da faculdade, utilizando uma stack moderna baseada em JavaScript.  
+          Frontend: Criado com React, oferecendo uma interface responsiva e intuitiva para visualização e gerenciamento de equipes e tarefas.  
+          Backend: Implementado com Node.js e Express.  
+          Database: Utilização de PostgreSQL para armazenamento estruturado dos dados.  
+          Resumo: A plataforma permite organizar times, criar e atribuir tarefas, acompanhar progresso em quadros estilo Kanban e colaborar em tempo real com outros membros.  
+          `,
+          IconUrl: '/EnricoBessaPortifolio/images/javascript.svg',
+          theme: 'bg-gradient-to-tr from-green-500 to-blue-500',
+          link: 'https://github.com/EnricoBessa/trabalho-em-grupo_gestao-de-times-e-tarefas',
+        },
+        {
           name: "Fitness App",
           initialDescription:
             "Um aplicativo desenvolvido em Flutter com o objetivo de exibir categorias de treinos, dietas recomendadas e dietas populares.",
@@ -222,6 +263,14 @@ const resources = {
         {
           name: "Certificado de conclusão ciência da computação de Harvard no Brasil",
           path: "/EnricoBessaPortifolio/certificados/CertificadoCienciaComputacaoHarvard.jpg",
+        },
+        {
+          name: "Certificado em Python – Cusro de Python no Santander",
+          path: "/EnricoBessaPortifolio/certificados/ceritficado_python_santander.jpg",
+        },
+        {
+          name: "Certificado Inteligência Artificial – Cusro de IA para pequenas e médias empresas",
+          path: "/EnricoBessaPortifolio/certificados/certificado_cusro_ia_santander.jpg",
         },
       ],
 
